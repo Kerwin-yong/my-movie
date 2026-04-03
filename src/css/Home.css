@@ -1,4 +1,5 @@
 .home {
+  text-align: center;
   padding: 2rem 0;
   width: 100%;
   box-sizing: border-box;
@@ -45,6 +46,7 @@
 
 @media (max-width: 639px) {
   .home {
+    text-align: center;
     padding: 1rem 0;
   }
 
@@ -55,9 +57,21 @@
 
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
+  /* 1. 核心修改：使用 auto-fit，它会根据实际卡片数量调整网格大小 */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 300px)); 
+  
+  /* 2. 核心修改：这行让网格内的所有卡片作为一个整体在容器里居中 */
+  justify-content: center; 
+  
+  /* 3. 核心修改：这行让网格容器本身在页面水平居中 */
+  margin: 0 auto; 
+  
+  /* 4. 给个最大宽度，防止在大屏幕上散得太开 */
+  max-width: 1400px; 
+  
+  /* 辅助样式 */
+  gap: 2.5rem;
+  padding: 3rem 2rem;
   width: 100%;
   box-sizing: border-box;
 }

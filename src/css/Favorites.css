@@ -53,16 +53,21 @@
 
 /* 1. 核心：让收藏夹的卡片也排成网格 */
 .movie-grid {
-    display: grid;
-    /* 这里的 200px 是关键，它限制了卡片的最大宽度 */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
+  display: grid;
+  /* 关键点：使用 auto-fill 而不是 auto-fit */
+  /* minmax(200px, 1fr) 确保名片宽度最小是 200px */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  justify-items: start; /* 确保名片从左边开始排 */
 }
 
-/* 2. 确保卡片在格子内正常缩放 */
-.movie-card {
-    width: 100%;
+@media (max-width: 450px) {
+  .movie-grid {
+    /* 手机端尺寸稍微缩小，确保能放下两列 */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+  }
 }
