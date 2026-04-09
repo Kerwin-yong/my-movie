@@ -1,16 +1,29 @@
-# React + Vite
+# My Movie - React + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [https://my-movie-fpu9.vercel.app/](https://my-movie-fpu9.vercel.app/)  
+**GitHub Repo:** [https://github.com/Kerwin-yong/my-movie](https://github.com/Kerwin-yong/my-movie)
 
-Currently, two official plugins are available:
+## 📌 Project Overview
+This project is a movie discovery web application built to demonstrate the seamless integration of **UI/UX Design principles** into **Frontend Development**. Using **React** and **Vite**, I focused on creating a high-fidelity, responsive user interface that prioritizes visual consistency and smooth user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Technical Highlights
+- **Design-to-Code Mastery**: Leveraged my background as a UI/UX Designer to ensure 100% pixel-perfect implementation from design concepts.
+- **Modern Framework**: Built with **React** for component-based architecture and **Vite** for optimized build performance.
+- **Responsive Layout**: Engineered with **CSS Flexbox/Grid** and Media Queries to provide a flawless experience on Mobile, Tablet, and Desktop.
+- **CI/CD Workflow**: Implemented automated deployment via **Vercel**, showcasing an understanding of modern development lifecycles.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend**: React.js, JavaScript (ES6+)
+- **Build Tool**: Vite
+- **Styling**: CSS3 (Custom Properties & Responsive Design)
+- **Hosting**: Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Project Structure
+- `src/components`: Reusable UI components.
+- `src/assets`: Project images and visual resources.
+- `public`: Static assets.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/Kerwin-yong/my-movie.git](https://github.com/Kerwin-yong/my-movie.git)
